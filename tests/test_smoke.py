@@ -15,7 +15,7 @@ class TestSmoke():
   def setup_method(self, method):
     options = Options()
     options.add_argument("--headless=new")
-    self.driver = webdriver.Firefox()
+    self.driver = webdriver.Chrome(options=options)
     self.vars = {}
   
   def teardown_method(self, method):
